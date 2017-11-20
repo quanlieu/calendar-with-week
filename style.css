@@ -1,0 +1,49 @@
+.mode {
+  display: inline-block;
+  margin-left: 5em;
+}
+
+.month-container {
+  display: inline-block;
+  margin: 1em;
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.month-name {
+  text-align: left;
+  color: #ff0014;
+  margin: 0.5em 0;
+}
+
+.week-nums {
+  width: 2.4em;
+  display: inline-flex;
+  background: #d3d3d3;
+  flex-wrap: wrap;
+}
+
+.cells {
+  width: 16.8em;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.cells > div, .week-nums > div {
+  padding: 0.2em;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+.days-name {
+  background: #d3d3d3;
+}
+
+.today {
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
