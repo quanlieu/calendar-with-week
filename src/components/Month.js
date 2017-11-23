@@ -11,7 +11,7 @@ export default class Month extends React.PureComponent {
     // Most weeks don't start at Sunday, weekOffset is the gaps
     const weekOffset = month[0].dayOfWeek;
     const weekSpan = Math.ceil((month.length + weekOffset) / 7);
-    var weekNums = [<Cell>WN</Cell>];
+    var weekNums = [<Cell key={-1}>WN</Cell>];
     var monthPadding = [];
 
     // For simplicity, to insert weekNums just calculate how many week does that
@@ -30,7 +30,7 @@ export default class Month extends React.PureComponent {
     }
 
     return (
-      <div className="month-container" key={name}>
+      <div className="month-container">
         <div className="month-name">{name}</div>
         <div className="week-nums">{weekNums}</div>
         <div className="cells">
