@@ -1,5 +1,5 @@
 {
-  "name": "hello",
+  "name": "calendar-with-week",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "test:coverage": "jest --coverage"
   },
   "author": "Quan Lieu <lieuchiquan@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
