@@ -1,6 +1,5 @@
 import React from 'react';
 import Month from './Month';
-import DaysOfWeek from './DaysOfWeek';
 
 const MONTHS = [
   'January',
@@ -77,7 +76,6 @@ export default class Calendar extends React.PureComponent {
             month={v}
             name={MONTHS[i]}
             key={MONTHS[i]}
-            daysOfWeek={<DaysOfWeek />}
           />
         ))}
       </div>

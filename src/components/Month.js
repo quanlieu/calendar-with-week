@@ -1,5 +1,6 @@
 import React from 'react';
 import { Cell, DateOfMonth } from '../styled-components/CalendarCell';
+import DaysOfWeek from './DaysOfWeek';
 
 export default class Month extends React.PureComponent {
   isToday(date) {
@@ -34,7 +35,7 @@ export default class Month extends React.PureComponent {
         <div className="month-name">{name}</div>
         <div className="week-nums">{weekNums}</div>
         <div className="cells">
-          {this.props.daysOfWeek}
+          <DaysOfWeek />
           {monthPadding}
           {month.map((day, i) => (
             <DateOfMonth today={this.isToday(day.raw)} key={day.dateOfMonth}>
