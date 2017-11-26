@@ -1,12 +1,8 @@
 import React from 'react';
-import Enzyme from 'enzyme';
-import { shallow, mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import { shallow } from 'enzyme';
 
 import App from '../src/App';
 import Calendar from '../src/components/Calendar';
-
-Enzyme.configure({ adapter: new Adapter() });
 
 describe('<App />', () => {
   test('should renders calendar', () => {
