@@ -32,14 +32,14 @@ export default class Calendar extends React.PureComponent {
     const firstSundayIndex = this.indexOfFirstSundayOfYear(year, mode);
 
     var repo = [[], [], [], [], [], [], [], [], [], [], [], []]; // 12 months
-    var weekNums = 0;
+    var weekNum = 0;
     if (mode === 'Inclusive' && firstSundayIndex) {
-      weekNums = 1;
+      weekNum = 1;
     }
 
     for (let i = 0; i < days; i++) {
       if ((i - firstSundayIndex) % 7 === 0) {
-        weekNums++;
+        weekNum++;
       }
 
       const date = new Date(firstDayInMs + i * MS_PER_DAY);
@@ -47,7 +47,7 @@ export default class Calendar extends React.PureComponent {
       repo[month].push({
         dateOfMonth: date.getDate(),
         dayOfWeek: date.getDay(),
-        weekNums,
+        weekNum,
         raw: date
       });
     }
